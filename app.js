@@ -179,7 +179,7 @@ const products = [
         category: "Tie",
         price: 160,
         description: "Premium Men's Formal Tie Collection.",
-        image: "tiec.JPG",
+        image: "tiec.jpg",
         colors: [
             { name: "Red", image: "tier.jpeg" },
             { name: "Black", image: "tieb.jpeg" },
