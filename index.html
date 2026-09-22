@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO -->
+        <meta name="description" content="RS Fashion - Stylish tops, blouses, innerwear and quality fabrics in Bangladesh.">
+        <meta name="keywords" content="RS Fashion, tops, blouse, innerwear, petticoat, fabric, Bangladesh">
+
+        <title>RS Fashion | Fashion for Every Woman</title>
+        <link rel="icon" type="image/png" href="logo.png">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!-- =========================================================
+         HEADER SECTION START
+    ========================================================== -->
+        <header class="site-header" id="home">
+
+            <div class="header-container">
+
+                <!-- Logo -->
+                <a href="#home" class="logo">
+                    <img src="logo.png" alt="Logo">
+                    <div>
+                       <h1>RS <span style="color: #a71111;">Fashion</span></h1>
+                        <small>Style • Comfort • Confidence</small>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="main-nav" id="mainNav">
+                    <a href="#home">Home</a>
+                    <a href="#products">All Products</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+
+                    <!-- Search -->
+                    <div class="header-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="searchInput" placeholder="Search products..." aria-label="Search products">
+                    </div>
+
+                    <!-- Cart -->
+                    <button class="cart-button" id="cartButton" aria-label="Open shopping cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-badge" id="cartCount">0</span>
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <button class="menu-button" id="menuButton" aria-label="Open menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+        <!-- HEADER SECTION END -->
+
+        <main>
+            <!-- =========================================================
+             HERO SECTION START
+        ========================================================== -->
+        <section class="hero" style="position: relative; overflow: hidden; min-height: 600px; display: flex; align-items: center;">
+            <img src="banner.JPG" alt="Hero Banner" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;">
+            <div class="hero-overlay" style="position: absolute; inset: 0; z-index: -1;"></div>
+            
+            <div class="hero-content">
+                <span class="hero-label">WELCOME TO RS FASHION</span>
+                <h1>
+                    Fashion That Makes
+                    <span>You Feel Beautiful</span>
+                </h1>
+                <p>
+                    Discover stylish tops, elegant blouses, comfortable 
+                    innerwear and quality fabrics designed for modern women.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- HERO SECTION END -->
+
+            <!-- =====================================================
+             FEATURE STRIP START
+        =================================================== -->
+            <section class="features">
+
+                <div class="feature-container">
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shirt"></i>
+                        </div>
+                        <div>
+                            <h3>Modern Style</h3>
+                            <p>Trendy fashion collections</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div>
+                            <h3>Quality Products</h3>
+                            <p>Selected with care</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div>
+                            <h3>Made for You</h3>
+                            <p>Comfort meets confidence</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Easy Ordering</h3>
+                            <p>Call or order via WhatsApp</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- FEATURE STRIP END -->
+
+            <!-- =====================================================
+             PRODUCTS SECTION START
+        =================================================== -->
+            <section class="products-section" id="products">
+
+                <div class="section-heading">
+                    <span class="section-label">OUR COLLECTION</span>
+                    <h2>Explore Our Products</h2>
+                    <p>
+                        Find your favorite styles from our carefully selected
+                        collection.
+                    </p>
+                </div>
+
+                <!-- Category Buttons -->
+                <div class="category-filters" id="categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="Petticoat">Petticoat</button>
+                    <button class="category-btn" data-category="Inner Cap">Inner Cap</button>
+                    <button class="category-btn" data-category="Inner Wear">Innerwear</button>
+                    <button class="category-btn" data-category="Blouses">Blouses</button>
+                    <button class="category-btn" data-category="Tops">Tops</button>
+                    <button class="category-btn" data-category="Tie">Tie</button>
+                    <button class="category-btn" data-category="Combo">Combo-Crop Tops + Patticoat</button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="product-grid" id="productGrid">
+                    <!-- Products are generated by JavaScript -->
+                </div>
+
+                <!-- No Products Message -->
+                <div class="no-products" id="noProducts">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>No products found</h3>
+                    <p>Try another search or category.</p>
+                </div>
+
+            </section>
+            <!-- PRODUCTS SECTION END -->
+
+            <!-- =====================================================
+             ABOUT SECTION START
+        =================================================== -->
+            <section class="about-section">
+
+                <div class="about-image">
+                    <img src="aboutb.jpg">
+                </div>
+
+                <div class="about-content">
+                    <span class="section-label">ABOUT RS FASHION</span>
+                    <h2>Style, Comfort & Confidence</h2>
+                    <p>
+                        RS Fashion is a modern fashion brand specializing in
+                        stylish tops, blouses, comfortable innerwear with quality
+                        fabrics for the modern woman.
+                    </p>
+                    <p>
+                        We believe great fashion should combine style, comfort,
+                        quality and confidence. Our collections are thoughtfully
+                        selected for everyday life as well as special occasions.
+                    </p>
+                    <a href="#products" class="btn btn-primary">
+                        Explore Collection
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </section>
+            <!-- ABOUT SECTION END -->
+
+            <!-- =====================================================
+             CONTACT CTA SECTION START
+        =================================================== -->
+            <section class="contact-cta" id="contact">
+
+                <div class="contact-cta-content">
+                    <span class="section-label">GET IN TOUCH</span>
+                    <h2>Ready to Find Your Style?</h2>
+                    <p>
+                        Have a question about our products? Contact RS Fashion
+                        directly and we'll be happy to help.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="tel:01865001042" class="btn btn-light">
+                            <i class="fa-solid fa-phone"></i>
+                            01865001042
+                        </a>
+                        <a href="https://wa.me/8801865001042" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <!-- CONTACT CTA SECTION END -->
+
+        </main>
+
+        <!-- =========================================================
+         FOOTER SECTION START
+    ========================================================== -->
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <!-- Footer Brand -->
+                <div class="footer-column footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span>RS</span>
+                        RS Fashion
+                    </a>
+                    <p>
+                        Stylish fashion, comfortable essentials and quality
+                        fabrics for the modern woman.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#products">All Products</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <a href="#products">Tops</a>
+                    <a href="#products">Innerwear</a>
+                    <a href="#products">Blouses</a>
+                    <a href="#products">Petticoat</a>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                                6/3 South Bishil,<br>
+                                Mirpur 1, Dhaka, Bangladesh
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:01865001042">01865001042</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> RS Fashion. All Rights Reserved.</p>
+            </div>
+
+        </footer>
+        <!-- FOOTER SECTION END -->
+
+        <!-- =========================================================
+         CART DRAWER START
+    ========================================================== -->
+
+        <!-- Overlay -->
+        <div class="cart-overlay" id="cartOverlay"></div>
+
+        <!-- Cart Drawer -->
+        <aside class="cart-drawer" id="cartDrawer">
+
+            <div class="cart-header">
+                <div>
+                    <span class="cart-small-title">YOUR SHOPPING BAG</span>
+                    <h2>Your Cart</h2>
+                </div>
+                <button id="closeCart" class="close-cart" aria-label="Close cart">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Cart Items -->
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items generated by JavaScript -->
+            </div>
+
+            <!-- Empty Cart -->
+            <div class="empty-cart" id="emptyCart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3>Your cart is empty</h3>
+                <p>Add some beautiful products to your cart.</p>
+                <button class="btn btn-primary" id="continueShopping">
+                    Continue Shopping
+                </button>
+            </div>
+
+            <!-- Cart Footer -->
+            <div class="cart-footer" id="cartFooter">
+                <div class="subtotal-container">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">৳0</span>
+                </div>
+
+                <!-- কাস্টমার ইনফরমেশন এবং ডেলিভারি লোকেশন ফর্ম -->
+                <div class="checkout-form" style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                    <!-- নাম, ফোন ও ঠিকানার ইনপুট ফিল্ডগুলোতে আইডি যোগ করুন -->
+<input type="text" id="customerName" placeholder="আপনার নাম লিখুন">
+<input type="tel" id="customerPhone" placeholder="মোবাইল নম্বর লিখুন">
+<textarea id="customerAddress" placeholder="পূর্ণ ঠিকানা (বাসা/রোড, এলাকা, থানা)"></textarea>
+                    
+                    <!-- ডেলিভারি লোকেশন সিলেক্ট করার ড্রপডাউন -->
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <label style="font-size: 12px; color: #555; font-weight: bold;">ডেলিভারি এলাকা নির্বাচন করুন:</label>
+                        <select id="deliveryLocation" style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; background: #fff;">
+                            <option value="inside">ঢাকার ভেতরে (Delivery Charge: Tk.70)</option>
+                            <option value="outside">ঢাকার বাইরে (Delivery Charge: Tk.120)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Order Now বাটন -->
+                <button class="whatsapp-btn" id="directCheckoutBtn" style="margin-top: 12px; width: 100%; padding: 10px; background: #25D366; color: #fff; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">
+                    <i class="fa-brands fa-whatsapp"></i> Order Now
+                </button>
+            </div>
+
+        </aside>
+        <!-- CART DRAWER END -->
+
+        <!-- Main JavaScript -->
+        <script src="app.js"></script>
+
+    </body>
+</html>
